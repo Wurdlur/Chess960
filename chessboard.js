@@ -4,7 +4,7 @@ window.ChessBoard = function(boardId, config) {
   var self = this;
 
   var options = {
-    fen: 'rbnqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR',
+    fen: 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR',
     resize: true,
     orientation: 'w',
     minSquareSize: 20,
