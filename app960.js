@@ -90,7 +90,7 @@ function setRook(num) {
 var fenString = black + '/pppppppp/8/8/8/8/PPPPPPPP/' + black.toUpperCase() + ' w KQkq - 0 1';
 console.log(fenString);
 
-var game = new Chess();
+var game = new Chess(fenString);
 var board = new ChessBoard('board', {
   onSquareClick: onSquareClick,
   fen: fenString
@@ -101,7 +101,6 @@ function onSquareClick(clickedSquare, selectedSquares) {
     if (game.moves({ square: clickedSquare }).length > 0) {
       board.selectSquare(clickedSquare);
     }
-
     return;
   }
 
